@@ -1,0 +1,32 @@
+{
+    "name": "mfullbrook/livekit-sdk",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "GPBMetadata\\": "generated/GPBMetadata",
+            "Livekit\\": "generated/Livekit",
+            "MFullbrook\\Livekit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mark Fullbrook",
+            "email": "mark@fullbrook.me"
+        }
+    ],
+    "require": {
+        "twirp/twirp": "^0.14.0",
+        "google/protobuf": "^4.33",
+        "guzzlehttp/guzzle": "^7.10",
+        "guzzlehttp/psr7": "^2.8",
+        "firebase/php-jwt": "^6.11"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.25"
+    }
+}
