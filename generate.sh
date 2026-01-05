@@ -10,6 +10,7 @@ protoc \
     --twirp_php_out=$DESTINATION \
     --php_out=$DESTINATION \
     -I=$API_PROTOCOL \
+    $API_PROTOCOL/logger/options.proto \
     $API_PROTOCOL/livekit_egress.proto \
     $API_PROTOCOL/livekit_room.proto \
     $API_PROTOCOL/livekit_webhook.proto \
