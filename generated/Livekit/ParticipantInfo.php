@@ -31,7 +31,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      */
     private $tracks;
     /**
-     * Generated from protobuf field <code>string metadata = 5;</code>
+     * Generated from protobuf field <code>string metadata = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $metadata = '';
     /**
@@ -47,7 +47,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      */
     protected $joined_at_ms = 0;
     /**
-     * Generated from protobuf field <code>string name = 9;</code>
+     * Generated from protobuf field <code>string name = 9 [(.logger.redact) = true];</code>
      */
     protected $name = '';
     /**
@@ -74,7 +74,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      */
     protected $kind = 0;
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 15;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 15 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     private $attributes;
     /**
@@ -85,6 +85,10 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .livekit.ParticipantInfo.KindDetail kind_details = 18;</code>
      */
     private $kind_details;
+    /**
+     * Generated from protobuf field <code>repeated .livekit.DataTrackInfo data_tracks = 19;</code>
+     */
+    private $data_tracks;
 
     /**
      * Constructor.
@@ -112,6 +116,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
      *     @type array|\Google\Protobuf\Internal\MapField $attributes
      *     @type int $disconnect_reason
      *     @type int[] $kind_details
+     *     @type \Livekit\DataTrackInfo[] $data_tracks
      * }
      */
     public function __construct($data = NULL) {
@@ -208,7 +213,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string metadata = 5;</code>
+     * Generated from protobuf field <code>string metadata = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getMetadata()
@@ -217,7 +222,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string metadata = 5;</code>
+     * Generated from protobuf field <code>string metadata = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */
@@ -282,7 +287,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 9;</code>
+     * Generated from protobuf field <code>string name = 9 [(.logger.redact) = true];</code>
      * @return string
      */
     public function getName()
@@ -291,7 +296,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 9;</code>
+     * Generated from protobuf field <code>string name = 9 [(.logger.redact) = true];</code>
      * @param string $var
      * @return $this
      */
@@ -430,7 +435,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 15;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 15 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return \Google\Protobuf\Internal\MapField
      */
     public function getAttributes()
@@ -439,7 +444,7 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 15;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 15 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
@@ -491,6 +496,28 @@ class ParticipantInfo extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Livekit\ParticipantInfo\KindDetail::class);
         $this->kind_details = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.DataTrackInfo data_tracks = 19;</code>
+     * @return RepeatedField<\Livekit\DataTrackInfo>
+     */
+    public function getDataTracks()
+    {
+        return $this->data_tracks;
+    }
+
+    /**
+     * Generated from protobuf field <code>repeated .livekit.DataTrackInfo data_tracks = 19;</code>
+     * @param \Livekit\DataTrackInfo[] $var
+     * @return $this
+     */
+    public function setDataTracks($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Livekit\DataTrackInfo::class);
+        $this->data_tracks = $arr;
 
         return $this;
     }

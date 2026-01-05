@@ -27,7 +27,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
     /**
      * User-defined metadata for the Trunk.
      *
-     * Generated from protobuf field <code>string metadata = 3;</code>
+     * Generated from protobuf field <code>string metadata = 3 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $metadata = '';
     /**
@@ -59,18 +59,18 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate with SIP server.
      * May be empty to have no authentication.
      *
-     * Generated from protobuf field <code>string auth_username = 7;</code>
+     * Generated from protobuf field <code>string auth_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $auth_username = '';
     /**
-     * Generated from protobuf field <code>string auth_password = 8;</code>
+     * Generated from protobuf field <code>string auth_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $auth_password = '';
     /**
      * Include these SIP X-* headers in INVITE request.
      * These headers are sent as-is and may help identify this call as coming from LiveKit for the other SIP endpoint.
      *
-     * Generated from protobuf field <code>map<string, string> headers = 9;</code>
+     * Generated from protobuf field <code>map<string, string> headers = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     private $headers;
     /**
@@ -198,7 +198,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
     /**
      * User-defined metadata for the Trunk.
      *
-     * Generated from protobuf field <code>string metadata = 3;</code>
+     * Generated from protobuf field <code>string metadata = 3 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getMetadata()
@@ -209,7 +209,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
     /**
      * User-defined metadata for the Trunk.
      *
-     * Generated from protobuf field <code>string metadata = 3;</code>
+     * Generated from protobuf field <code>string metadata = 3 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */
@@ -331,7 +331,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate with SIP server.
      * May be empty to have no authentication.
      *
-     * Generated from protobuf field <code>string auth_username = 7;</code>
+     * Generated from protobuf field <code>string auth_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getAuthUsername()
@@ -343,7 +343,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
      * Username and password used to authenticate with SIP server.
      * May be empty to have no authentication.
      *
-     * Generated from protobuf field <code>string auth_username = 7;</code>
+     * Generated from protobuf field <code>string auth_username = 7 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */
@@ -356,7 +356,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string auth_password = 8;</code>
+     * Generated from protobuf field <code>string auth_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getAuthPassword()
@@ -365,7 +365,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string auth_password = 8;</code>
+     * Generated from protobuf field <code>string auth_password = 8 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */
@@ -381,7 +381,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
      * Include these SIP X-* headers in INVITE request.
      * These headers are sent as-is and may help identify this call as coming from LiveKit for the other SIP endpoint.
      *
-     * Generated from protobuf field <code>map<string, string> headers = 9;</code>
+     * Generated from protobuf field <code>map<string, string> headers = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return \Google\Protobuf\Internal\MapField
      */
     public function getHeaders()
@@ -393,7 +393,7 @@ class SIPOutboundTrunkInfo extends \Google\Protobuf\Internal\Message
      * Include these SIP X-* headers in INVITE request.
      * These headers are sent as-is and may help identify this call as coming from LiveKit for the other SIP endpoint.
      *
-     * Generated from protobuf field <code>map<string, string> headers = 9;</code>
+     * Generated from protobuf field <code>map<string, string> headers = 9 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */

@@ -27,11 +27,11 @@ class SIPDispatchRuleUpdate extends \Google\Protobuf\Internal\Message
      */
     protected $name = null;
     /**
-     * Generated from protobuf field <code>optional string metadata = 4;</code>
+     * Generated from protobuf field <code>optional string metadata = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     protected $metadata = null;
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 5;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      */
     private $attributes;
     /**
@@ -155,7 +155,7 @@ class SIPDispatchRuleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string metadata = 4;</code>
+     * Generated from protobuf field <code>optional string metadata = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return string
      */
     public function getMetadata()
@@ -174,7 +174,7 @@ class SIPDispatchRuleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>optional string metadata = 4;</code>
+     * Generated from protobuf field <code>optional string metadata = 4 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param string $var
      * @return $this
      */
@@ -187,7 +187,7 @@ class SIPDispatchRuleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 5;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @return \Google\Protobuf\Internal\MapField
      */
     public function getAttributes()
@@ -196,7 +196,7 @@ class SIPDispatchRuleUpdate extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>map<string, string> attributes = 5;</code>
+     * Generated from protobuf field <code>map<string, string> attributes = 5 [(.logger.redact) = true, (.logger.redact_format) = "<redacted ({{ .Size }} bytes)>"];</code>
      * @param array|\Google\Protobuf\Internal\MapField $var
      * @return $this
      */
